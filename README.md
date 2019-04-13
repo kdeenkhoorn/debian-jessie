@@ -14,7 +14,7 @@ This docker image is an armhf version of Debian 8 linux which i have created esp
 ```
 $ cd /workdir_with_500M_of_space
 $ sudo /usr/sbin/debootstrap --variant=minbase jessie jessie
-$ sudo tar -C jessie -c . | docker import - debian-jessie:2.0
+$ sudo tar -C jessie -c . | docker import - kdedesign/debian-jessie:2.0
 
 ```
 
