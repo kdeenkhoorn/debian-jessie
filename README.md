@@ -13,7 +13,7 @@ This docker image is an armhf version of Debian 8 linux which i have created esp
 ## Build command:
 ```
 $ cd /workdir_with_500M_of_space
-$ sudo /usr/sbin/debootstrap jessie jessie  --variant=minbase jessie
+$ sudo /usr/sbin/debootstrap --variant=minbase jessie jessie
 $ sudo tar -C jessie -c . | docker import - debian-jessie:2.0
 
 ```
